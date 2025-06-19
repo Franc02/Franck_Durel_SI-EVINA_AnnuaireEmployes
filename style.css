@@ -1,0 +1,150 @@
+/* Reset de base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corps de la page */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f7fa;
+  padding: 20px;
+  color: #333;
+}
+
+/* Conteneur principal */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Titres */
+h1, h2 {
+  margin-bottom: 20px;
+  color: #ff6600;
+  text-align: center;
+}
+
+/* Formulaire */
+form {
+  display: grid;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+/* Bouton Ajouter */
+button {
+  padding: 12px;
+  background-color: #148117;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #148117;
+}
+
+/* Liste des employés */
+#employee-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.employee-card {
+  background-color: #fafafa;
+  padding: 15px;
+  border-left: 5px solid #2b2b2b;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.employee-info {
+  flex: 1;
+}
+
+.employee-info p {
+  margin: 5px 0;
+}
+
+.employee-card button {
+  background-color: #e53935;
+  padding: 8px 12px;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.employee-card button:hover {
+  background-color: #c62828;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .employee-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .employee-card button {
+    margin-top: 10px;
+    width: 100%;
+  }
+}
+
+/* Notification pop-up */
+.notification {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #28a745;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 6px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  font-weight: bold;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.notification.error {
+  background-color: #dc3545;
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.visible {
+  opacity: 1;
+}
