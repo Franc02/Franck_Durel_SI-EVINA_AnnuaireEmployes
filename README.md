@@ -22,17 +22,27 @@ SI EVINA Franck Durel
 // Fonctionnalités développées
 
 -Formulaire d’ajout d’un employé avec validation :
+
 -Nom, Prénom, Email, Fonction
+
 -Validation des champs vides et de l’adresse email
+
 -Affichage dynamique de la liste des employés
+
 -Suppression d’un employé sans rechargement de la page
+
 -Persistance des données grâce à `localStorage`
+
 -Interface responsive et design lisible
 
 // Bonus
 
 -Responsive design 
+
 -Interface claire avec assez de style
+
 -Un pop up de confirmation avant la suppression d’un employé
+
 -Un message de succès après l’ajout ou la suppression d’un employé
+
 -Utilisation d’un identifiant unique (`Date.now()`) pour chaque employé
