@@ -7,7 +7,9 @@ SI EVINA Franck Durel
 // Langages utilisés
 
 *HTML5
+
 *CSS3
+
 *JavaScript (Vanilla)
 
 // Temps réellement passé
